@@ -1,0 +1,171 @@
+.header {
+  margin-bottom: 40px;
+}
+
+main {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.banner {
+  height: 500px;
+  padding-top: 54px;
+  margin-bottom: 90px;
+}
+
+.banner__screen {
+  height: 411px;
+  background-color: #eee4db;
+  position: relative;
+}
+
+.banner__img {
+  position: absolute;
+  top: 259px;
+  right: 366px;
+}
+
+.banner__heading {
+  max-width: 307px;
+  margin: 0;
+  padding: 0;
+  padding-top: 89px;
+  margin-bottom: 20px;
+  margin-left: 133px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+.banner__title {
+  margin-bottom: 20px;
+  margin-left: 133px;
+}
+
+.banner__button {
+  margin-bottom: 134px;
+  margin-left: 133px;
+}
+
+.products__heading,
+.delivery__heading,
+.design__heading,
+.contacts__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.banner__link {
+  display: block;
+  padding: 11px;
+  background-color: #c29974;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.products {
+  margin-bottom: 90px;
+}
+
+.products__heading {
+  margin-bottom: 30px;
+}
+
+.products__arrows-left {
+  background-image: url(..//img/arrow_left.svg);
+  width: 37px;
+  height: 37px;
+}
+
+.products__arrows-right {
+  background-image: url(..//img/arrow_right.svg);
+  width: 37px;
+  height: 37px;
+}
+
+.products__text {
+  width: 580px;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+.delivery__innerpic {
+  width: 480px;
+  height: 559px;
+  overflow: hidden;
+  object-fit: cover;
+  margin-right: 60px;
+}
+
+.delivery__img {
+  width: 100%;
+  height: 109%;
+  overflow: hidden;
+}
+
+.delivery__heading {
+  margin-bottom: 11px;
+  padding-left: 60px;
+}
+
+.delivery__item {
+  width: 326px;
+  height: 55px;
+  margin-bottom: 11px;
+  padding-top: 11px;
+  padding-left: 60px;
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.delivery__active {
+  background: rgba(112, 187, 220, 0.2);
+  color: #1e0606;
+  font-weight: bold;
+}
+
+.delivery__wraptext {
+  padding-left: 60px;
+}
+
+.delivery__text {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.delivery__button {
+  margin-left: 60px;
+}
+
+.partners {
+  margin-bottom: 90px;
+}
+.info {
+  margin-bottom: 100px;
+}
+
+.design {
+  width: 543px;
+  height: 254px;
+  background-color: #e1f0f7;
+  margin-right: 57px;
+  margin-bottom: 20px;
+}
+
+.contacts {
+  width: 543px;
+  height: 254px;
+  background-color: #e1f0f7;
+}

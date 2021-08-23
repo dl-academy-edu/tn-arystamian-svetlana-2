@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Favorite Store DLK</title>
+    <title>DLK Toy For Kids</title>
     <link rel="stylesheet" href="css/common.css" class="css" />
-    <link rel="stylesheet" href="css/style.css" class="css" />
+    <link rel="stylesheet" href="css/toy.css" class="css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -58,185 +58,156 @@
 
     <!-- MAIN -->
     <main>
-      <section class="banner">
-        <div class="banner__screen">
-          <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
-          <h3 class="banner__title">Designed in Slovenia</h3>
-          <a href="#" target="_blank" class="button banner__button">
-            EXPLORE NOW
-          </a>
-          <!-- <div class="banner__innerpic">
-            <img src="img/monster.png" alt="cute monster" class="banner__img" />
-          </div>-->
+      <section class="toy">
+        <h2 class="toy__heading">Toy for kids</h2>
+        <nav class="breadcrumb">
+          <ul class="breadcrumb__list undoted">
+            <li class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link">Home</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link">Catalog</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="#" class="breadcrumb__link breadcrumb__active">Toys</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="toy__choice choice">
+          <ul class="choice__list undoted">
+            <li class="choice__item">
+              <h2 class="choice__title">Cost</h2>
+              <label class="choice__wrap">
+                <input
+                  type="range"
+                  class="choice__range"
+                  min="0"
+                  max="500"
+                  value="50"
+                />
+                <span class="choice__digit-start">0</span>
+                <span class="choice__digit-end">500</span>
+              </label>
+            </li>
+            <li class="choice__item">
+              <h2 class="choice__title">Color</h2>
+              <label class="choice__container">
+                <input type="checkbox" checked="checked" />
+                <span class="choice__checkmark">Black</span>
+              </label>
+              <label class="choice__container">
+                <input type="checkbox" />
+                <span class="choice__checkmark">Blue</span>
+              </label>
+              <label class="choice__container">
+                <input type="checkbox" />
+                <span class="choice__checkmark">Green</span>
+              </label>
+              <label class="choice__container">
+                <input type="checkbox" />
+                <span class="choice__checkmark">White</span>
+              </label>
+            </li>
+            <li class="choice__item">
+              <h2 class="choice__title">Delivery</h2>
+              <label class="choice__container">
+                <input type="radio" />
+                <span class="choice__checkmark">Free shipping</span>
+              </label>
+              <label class="choice__container">
+                <input type="radio" />
+                <span class="choice__checkmark">Fast shipping</span>
+              </label>
+            </li>
+            <li class="choice__item">
+              <h2 class="choice__title">Amount</h2>
+              <ul class="choice__sort undoted">
+                <li class="choice__sort-min choice__sort-active">
+                  <a href="#" class="choice__btn choice__btn-active">0-5</a>
+                </li>
+                <li class="choice__sort-middle">
+                  <a href="#" class="choice__btn">10-20</a>
+                </li>
+                <li class="choice__sort-max">
+                  <a href="#" class="choice__btn">20-50</a>
+                </li>
+              </ul>
+            </li>
+            <li class="choice__item">
+              <a href="#" target="_blank" class="button">Apply</a>
+            </li>
+          </ul>
         </div>
-
-        <a href="#" target="_blank" class="banner__link">
-          Free (continental) USA shipping on all orders of $100 USD or more!
-        </a>
-        <div class="banner__innerpic">
-          <img src="img/monster.png" alt="cute monster" class="banner__img" />
-        </div>
-        <!-- <div class="banner__img"></div> -->
-      </section>
-      <!-- /banner -->
-      <section class="products">
-        <h2 class="products__heading">Category Products</h2>
-        <ul class="products__list undoted">
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link products__kids">
-              <div class="products__names products__long">
-                <p class="products__name">apparel</p>
-                <p class="products__name">kids</p>
-              </div>
+        <ul class="toy__prod undoted">
+          <li class="toy__item toy__shark">
+            <a href="#" target="_blank" class="toy__link">
+              <img src="img/sharky.png" alt="product foto" class="toy__img" />
+              <span class="toy__text">SHARKY BEAN BAG CHAIR COVER</span>
+              <span class="toy__price">$60.00 USD</span>
             </a>
           </li>
-          <li class="products__item">
-            <a
-              href="#"
-              target="_blank"
-              class="products__link products__holiday"
-            >
-              <div class="products__names products__long">
-                <p class="products__name">holiday</p>
-                <p class="products__name">shop</p>
-              </div>
+          <li class="toy__item">
+            <a href="#" target="_blank" class="toy__link">
+              <img src="img/brass.png" alt="product foto" class="toy__img" />
+              <span class="toy__text">BRASS DECO FRAMES</span>
+              <span class="toy__price">$66.00 USD</span>
             </a>
           </li>
-          <li class="products__item">
-            <a href="#" target="_blank" class="products__link products__toys">
-              <div class="products__names products__short">
-                <p class="products__name">accessories</p>
-              </div>
+          <li class="toy__item">
+            <a href="#" target="_blank" class="toy__link">
+              <img src="img/apron.png" alt="product foto" class="toy__img" />
+              <span class="toy__text">CIBO FULL APRON</span>
+              <span class="toy__price">$60.00 USD</span>
             </a>
           </li>
-          <li class="products__item">
-            <a
-              href="#"
-              target="_blank"
-              class="products__link products__accessories"
-            >
-              <div class="products__names products__short">
-                <p class="products__name">shop</p>
-              </div>
+          <li class="toy__item">
+            <a href="#" target="_blank" class="toy__link">
+              <img
+                src="img/gumball_machine.png"
+                alt="product foto"
+                class="toy__img"
+              />
+              <span class="toy__text">GATCHA GATCHA GUMBALL MACHINE</span>
+              <span class="toy__price">$56.00 USD</span>
+            </a>
+          </li>
+          <li class="toy__item">
+            <a href="#" target="_blank" class="toy__link">
+              <img src="img/candle.png" alt="product foto" class="toy__img" />
+              <span class="toy__text">CHRISTMAS ADVENT SCENTED CANDLE</span>
+              <span class="toy__price">$29.00 USD</span>
+            </a>
+          </li>
+          <li class="toy__item">
+            <a href="#" target="_blank" class="toy__link">
+              <img
+                src="img/tea_light.png"
+                alt="product foto"
+                class="toy__img"
+              />
+              <span class="toy__text">TANGLE SPINNING TEA LIGHT</span>
+              <span class="toy__price">$56.00 USD</span>
             </a>
           </li>
         </ul>
-        <div class="products__arrows-left">
-          <!-- <img src="#" alt="left arrow" class="products__arrows-left" />
-          <img src="#" alt="right arrow" class="products__arrows-right" /> -->
-        </div>
-        <div class="products__arrows-right"></div>
-        <p class="products__text">
-          Modern finds for the modern home. Curated goods by unique designers
-          around the world from fashion to furniture for kids and adults.
-        </p>
-      </section>
-      <!-- /products -->
-      <section class="delivery">
-        <div class="delivery__innerpic">
+        <div class="toy__slider">
           <img
-            src="img/foto_girl.jpg"
-            alt="photo of a girl"
-            class="delivery__img"
+            src="img/arrow_left_grey.svg"
+            alt="arrow left"
+            class="toy__arrow-left"
+          />
+          <span class="toy__count toy__count-active">1</span>
+          <span class="toy__count">2</span>
+          <span class="toy__count">3</span>
+          <span class="toy__count">4</span>
+          <img
+            src="img/arrow_right_grey.svg"
+            alt="arrow left"
+            class="toy__arrow-right"
           />
         </div>
-        <h2 class="delivery__heading">Delivery</h2>
-        <ul class="delivery__list undoted">
-          <li class="delivery__item delivery__active">
-            <a href="#" target="_blank" class="delivery__link">Delivery</a>
-          </li>
-          <li class="delivery__item">
-            <a href="#" target="_blank" class="delivery__link">Guarantee</a>
-          </li>
-          <li class="delivery__item">
-            <a href="#" target="_blank" class="delivery__link">Credit</a>
-          </li>
-        </ul>
-        <div class="delivery__wraptext">
-          <p class="delivery__text">
-            Some days i feel like i've been working on dlk my entire life and
-            there are other days that i am completely shocked that four years
-            have flown by. It's simply magical.
-          </p>
-          <p class="delivery__text">
-            What started as an outlet to deal with the traumatic loss of my
-            husband, dlk has now become a truly happy place for me and i have
-            you and all of the beautiful designers that we work with to thank!
-          </p>
-        </div>
-        <a href="#" target="_blank" class="button delivery__button">
-          LEARN MORE
-        </a>
       </section>
-      <!-- /delivery -->
-      <section class="partners">
-        <h2 class="partners__heading hidden">Our partners</h2>
-        <ul class="partners__list undoted">
-          <li class="partners__item">
-            <a href="https://mail.ru/" target="_blank" class="partners__link">
-              <img src="img/mail.png" alt="mail.ru" class="partners__img" />
-            </a>
-          </li>
-          <li class="partners__item">
-            <a
-              href="https://www.apple.com/ru/"
-              target="_blank"
-              class="partners__link"
-            >
-              <img src="img/apple.png" alt="apple" class="partners__img" />
-            </a>
-          </li>
-          <li class="partners__item">
-            <a
-              href="https://eltex-co.ru/"
-              target="_blank"
-              class="partners__link"
-            >
-              <img src="img/eltex.png" alt="eltex" class="partners__img" />
-            </a>
-          </li>
-          <li class="partners__item">
-            <a
-              href="https://www.owox.ru/"
-              target="_blank"
-              class="partners__link"
-            >
-              <img src="img/owox.png" alt="owox" class="partners__img" />
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- /partners -->
-      <section class="info">
-        <div class="design">
-          <h2 class="design__heading">Design Life Kids</h2>
-          <h3 class="design__title">About Us</h3>
-          <p class="design__text">
-            Some days i feel like i've been working on dlk my entire life and
-            there are other days that i am completely shocked that four years
-            have flown by. It's simply magical.
-          </p>
-          <a href="#" target="_blank" class="button">buy now</a>
-        </div>
-        <div class="contacts">
-          <h2 class="contacts__heading">Contacts</h2>
-          <p class="contacts__text">
-            Some days i feel like i've been working on dlk my entire life and
-            there are other days that i am completely shocked that four years
-            have flown by. It's simply magical.
-          </p>
-          <div>
-            <a
-              href="https://www.google.ru/maps/place/Hayes+Valley,+%D0%A1%D0%B0%D0%BD-%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%81%D0%BA%D0%BE,+%D0%9A%D0%B0%D0%BB%D0%B8%D1%84%D0%BE%D1%80%D0%BD%D0%B8%D1%8F+94102,+%D0%A1%D0%A8%D0%90/@37.7747213,-122.4297098,16z/data=!3m1!4b1!4m5!3m4!1s0x808580a196ede719:0x2fb5607634331f2f!8m2!3d37.7759073!4d-122.4245247"
-              target="_blank"
-              class="contacts__link"
-            >
-              <img src="img/map.png" alt="map" class="contacts__img" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- /info -->
+      <!-- /products -->
     </main>
     <!-- /MAIN -->
 
