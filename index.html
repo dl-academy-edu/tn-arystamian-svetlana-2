@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <audio autoplay loop src="audio/Ferry_Corsten-Tomorrow.mp3"></audio>
+    <!-- <audio autoplay loop src="audio/Ferry_Corsten-Tomorrow.mp3"></audio> -->
     <header class="header container">
       <div>
         <a href="index.html" class="logo header__logo">
@@ -37,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header__btn">
+      <button class="header__btn" aria-label="search">
         <img src="img/search.jpg" alt="search" class="btn-img" />
       </button>
       <a href="contact_us.html" class="header__button" target="_blank">
@@ -54,22 +54,34 @@
             <span class="banner__num">01</span>
             <ul class="banner__slider-list undoted">
               <li class="banner__slider-item item-one">
-                <button class="banner__btn banner__btn-active"></button>
+                <button
+                  class="banner__btn banner__btn-active"
+                  aria-label="bunner-button-slide"
+                ></button>
               </li>
               <li class="banner__slider-item item-two">
-                <button class="banner__btn"></button>
+                <button
+                  class="banner__btn"
+                  aria-label="bunner-button-slide"
+                ></button>
               </li>
               <li class="banner__slider-item item-three">
-                <button class="banner__btn"></button>
+                <button
+                  class="banner__btn"
+                  aria-label="bunner-button-slide"
+                ></button>
               </li>
               <li class="banner__slider-item item-four">
-                <button class="banner__btn"></button>
+                <button
+                  class="banner__btn"
+                  aria-label="bunner-button-slide"
+                ></button>
               </li>
             </ul>
           </div>
           <div class="banner__screen">
             <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
-            <h3 class="banner__title">Designed in Slovenia</h3>
+            <h2 class="banner__title">Designed in Slovenia</h2>
             <a href="#" target="_blank" class="button banner__button">
               EXPLORE NOW
             </a>
@@ -135,28 +147,34 @@
           </li>
         </ul>
         <div class="products__arrows">
-          <div class="products__arrows-left">
+          <!-- <div class="products__arrows-left" tabindex="0"> -->
+          <button class="products__arrows-left">
             <svg
-              width="37"
+              width="35"
               height="37"
-              viewBox="-10 0 35 30"
+              viewBox="-4 0 35 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4" />
             </svg>
-          </div>
-          <div class="products__arrows-right">
+          </button>
+
+          <!-- </div> -->
+          <!-- <div class="products__arrows-right" tabindex="0"> -->
+          <button class="products__arrows-right">
             <svg
-              width="37"
+              width="35"
               height="37"
-              viewBox="-10 0 35 30"
+              viewBox="-5 0 35 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4" />
             </svg>
-          </div>
+          </button>
+
+          <!-- </div> -->
           <p class="products__text">
             Modern finds for the modern home. Curated goods by unique designers
             around the world from fashion to furniture for kids and adults.
@@ -264,6 +282,7 @@
             </p>
             <div class="contacts__map">
               <iframe
+                aria-label="contacts-map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25229.231104883824!2d-122.42533200000001!3d37.774713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2zSGF5ZXMgVmFsbGV5LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjyA5NDEwMiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1630467085685!5m2!1sru!2sru"
                 width="483"
                 height="200"
@@ -282,7 +301,7 @@
     <footer class="footer">
       <section class="footer__info container">
         <div class="footer__navigation">
-          <h4 class="footer__title">Navigation</h4>
+          <h3 class="footer__title">Navigation</h3>
           <ul class="footer__list undoted">
             <li class="footer__item">
               <a href="#" target="_blank" class="footer__link">About Us</a>
@@ -312,7 +331,7 @@
         </div>
         <!-- /navigation -->
         <div class="footer__customer">
-          <h4 class="footer__title">Customer Information</h4>
+          <h3 class="footer__title">Customer Information</h3>
           <ul class="footer__list undoted">
             <li class="footer__item">
               <a href="contact_us.html" target="_blank" class="footer__link">
@@ -346,7 +365,7 @@
         </div>
         <!-- /customer-footer -->
         <div class="footer__connect">
-          <h4 class="footer__title">Connect</h4>
+          <h3 class="footer__title">Connect</h3>
           <form action="#" class="footer__form">
             <fieldset class="footer__fieldset">
               <div class="label-wrapper">
@@ -367,6 +386,7 @@
                 href="https://www.facebook.com"
                 target="_blank"
                 class="icons-link"
+                aria-label="link-facebook"
               >
                 <svg
                   width="30"
@@ -391,7 +411,12 @@
               </a>
             </li>
             <li class="icons__item">
-              <a href="https://twitter.com/" target="_blank" class="icons-link">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="icons-link"
+                aria-label="link-twitter"
+              >
                 <svg
                   width="30"
                   height="30"
@@ -419,6 +444,7 @@
                 href="https://www.pinterest.ru/"
                 target="_blank"
                 class="icons-link"
+                aria-label="link-pinterest"
               >
                 <svg
                   width="30"
@@ -447,6 +473,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 class="icons-link"
+                aria-label="link-instagram"
               >
                 <svg
                   width="30"
@@ -475,51 +502,42 @@
         <!-- /connect -->
       </section>
       <div class="footer__other container">
-        <div class="footer__wrap">
-          <form action="#" class="footer__stars-form">
-            <fieldset class="footer__stars-field">
-              <!-- <legend>Company Rating</legend> -->
-              <h3 class="footer__stars-title">Company Rating</h3>
-              <ul class="undoted footer__stars-list">
-                <li>
-                  <input type="checkbox" id="star-one" class="star-input" />
-                  <label
-                    for="star-one"
-                    class="star-label star-label-one"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-two" class="star-input" />
-                  <label
-                    for="star-two"
-                    class="star-label star-label-two"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-three" class="star-input" />
-                  <label
-                    for="star-three"
-                    class="star-label star-label-three"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-four" class="star-input" />
-                  <label
-                    for="star-four"
-                    class="star-label star-label-four"
-                  ></label>
-                </li>
-                <li>
-                  <input type="checkbox" id="star-five" class="star-input" />
-                  <label
-                    for="star-five"
-                    class="star-label star-label-five"
-                  ></label>
-                </li>
-              </ul>
-            </fieldset>
-          </form>
-        </div>
+        <form action="#" class="footer__stars-form">
+          <fieldset class="footer__stars-field" tabindex="0">
+            <h3 class="footer__stars-title">Company Rating</h3>
+            <ul class="undoted footer__stars-list">
+              <li>
+                <input type="checkbox" id="star-one" class="star-input" />
+                <label for="star-one" class="star-label star-label-one"></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-two" class="star-input" />
+                <label for="star-two" class="star-label star-label-two"></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-three" class="star-input" />
+                <label
+                  for="star-three"
+                  class="star-label star-label-three"
+                ></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-four" class="star-input" />
+                <label
+                  for="star-four"
+                  class="star-label star-label-four"
+                ></label>
+              </li>
+              <li>
+                <input type="checkbox" id="star-five" class="star-input" />
+                <label
+                  for="star-five"
+                  class="star-label star-label-five"
+                ></label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
         <p class="footer__text footer__text-copy">
           Copyright © 2018 Dlk • Design Life Kids
         </p>
@@ -533,7 +551,7 @@
       </div>
       <!-- /footer__other-->
     </footer>
-    <!-- MAIN -->
+    <!-- footer -->
 
     <section class="popup contact">
       <h2 class="popup__title contact__title">PopUp</h2>
@@ -578,13 +596,8 @@
           </fieldset>
           <fieldset class="checkbox-wrap">
             <div class="checkbox-list">
-              <input
-                type="checkbox"
-                id="check-cash"
-                class="checkbox-input"
-                disabled
-              />
-              <label for="check-cash" class="checkbox-label">
+              <input type="checkbox" id="check-cash" class="checkbox-input" />
+              <label for="check-cash" class="checkbox-label" tabindex="0">
                 By clicking on the button, you consent to the processing of your
                 personal data
               </label>
