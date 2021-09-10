@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Favorite Store DLK</title>
-    <link rel="stylesheet" href="css/common.css" class="css" />
-    <link rel="stylesheet" href="css/style.css" class="css" />
+    <link rel="stylesheet" href="css/normalize.css" class="css" />
+    <link rel="stylesheet" href="css/common.min.css" class="css" />
+    <link rel="stylesheet" href="css/style.min.css" class="css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,7 +42,7 @@
         <img src="img/search.jpg" alt="search" class="btn-img" />
       </button>
       <a href="contact_us.html" class="header__button" target="_blank">
-        contact us
+        contact&nbsp;&nbsp;us
       </a>
     </header>
     <!-- / header-->
@@ -82,9 +83,12 @@
           <div class="banner__screen">
             <h1 class="banner__heading">THE OOH NOO COLLECTION</h1>
             <h2 class="banner__title">Designed in Slovenia</h2>
-            <a href="#" class="button banner__button banner__button_js">
+            <button class="button banner__button banner__button_js">
               EXPLORE NOW
-            </a>
+            </button>
+            <!-- <a href="#" class="button banner__button banner__button_js">
+              EXPLORE NOW
+            </a> -->
           </div>
           <div class="banner__innerpic">
             <img src="img/monster.png" alt="cute monster" class="banner__img" />
@@ -280,17 +284,17 @@
               there are other days that i am completely shocked that four years
               have flown by. It's simply magical.
             </p>
-            <div class="contacts__map">
-              <iframe
-                aria-label="contacts-map"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25229.231104883824!2d-122.42533200000001!3d37.774713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2zSGF5ZXMgVmFsbGV5LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjyA5NDEwMiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1630467085685!5m2!1sru!2sru"
-                width="483"
-                height="200"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
+          </div>
+          <div class="contacts__map">
+            <iframe
+              aria-label="contacts-map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25229.231104883824!2d-122.42533200000001!3d37.774713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2zSGF5ZXMgVmFsbGV5LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjyA5NDEwMiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1630467085685!5m2!1sru!2sru"
+              width="483"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -613,13 +617,17 @@
                 </label>
               </div>
             </fieldset>
-            <button class="button contact__button button__submit" type="submit">
+            <button
+              class="button contact__button button__submit"
+              type="submit"
+              disabled
+            >
               Submit
             </button>
           </form>
         </div>
       </div>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
